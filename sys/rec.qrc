@@ -1,0 +1,67 @@
+<RCC>
+    <qresource prefix="/">
+        <file>img/16pic_588920_s.jpg</file>
+        <file>img/16pic_591701_s.jpg</file>
+        <file>img/16pic_591937_s.jpg</file>
+        <file>img/set.png</file>
+        <file>img/show.jpg</file>
+        <file>img/登录背景.jpg</file>
+        <file>img/登录主图.jpg</file>
+        <file>img/企业标识.jpg</file>
+        <file>img/user_bk.jpg</file>
+        <file>img/hei.jpg</file>
+        <file>img/room_bk.jpg</file>
+        <file>img/room.jpg</file>
+        <file>img/re.ico</file>
+        <file>img/chart.png</file>
+        <file>img/communication.png</file>
+        <file>img/help.png</file>
+        <file>img/qiut.png</file>
+        <file>img/setting.png</file>
+        <file>img/accout.png</file>
+        <file>img/password.png</file>
+        <file>img/login.png</file>
+        <file>img/2.png</file>
+        <file>img/blue.jpg</file>
+        <file>img/Data report.png</file>
+        <file>img/sensor.png</file>
+        <file>img/sensor_table.png</file>
+        <file>img/User Management.png</file>
+        <file>img/grey.png</file>
+        <file>img/sensor_set.png</file>
+        <file>img/bigdata.jpg</file>
+        <file>img/Down.png</file>
+        <file>img/Equipment.png</file>
+        <file>img/Dark_Blue.png</file>
+        <file>img/air.jpg</file>
+        <file>img/Breath.png</file>
+        <file>img/Dehumi.png</file>
+        <file>img/Disinfect.png</file>
+        <file>img/Lighgt.png</file>
+        <file>img/Moiste.png</file>
+        <file>img/sensitive.png</file>
+        <file>img/wind.png</file>
+        <file>img/heat.png</file>
+        <file>img/head.png</file>
+        <file>img/title.png</file>
+        <file>img/1.jpg</file>
+        <file>img/3.jpg</file>
+        <file>img/4.png</file>
+        <file>img/left.png</file>
+        <file>img/right.png</file>
+        <file>img/air.png</file>
+        <file>img/title_blcak.png</file>
+        <file>img/leftTitle.png</file>
+        <file>img/table1.png</file>
+        <file>img/table2.png</file>
+        <file>img/table3.png</file>
+        <file>img/qt_zh_CN.qm</file>
+        <file>img/16pic_7047146_s.png</file>
+        <file>img/2.ico</file>
+        <file>img/badge.png</file>
+        <file>img/left_title2.png</file>
+        <file>img/left_title3.png</file>
+        <file>img/down_arrow.png</file>
+        <file>img/right_arrow.png</file>
+    </qresource>
+</RCC>
