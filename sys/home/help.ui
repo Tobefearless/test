@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Help</class>
+ <widget class="QMainWindow" name="Help">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1232</width>
+    <height>787</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>-4372</y>
+         <width>1195</width>
+         <height>5139</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="0">
+         <widget class="QGroupBox" name="groupBox">
+          <property name="minimumSize">
+           <size>
+            <width>1168</width>
+            <height>5121</height>
+           </size>
+          </property>
+          <property name="title">
+           <string/>
+          </property>
+          <widget class="QLabel" name="label">
+           <property name="geometry">
+            <rect>
+             <x>320</x>
+             <y>30</y>
+             <width>641</width>
+             <height>101</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>宋体</family>
+             <pointsize>26</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>CYS12型蚕种智能催青保种测控系统</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_2">
+           <property name="geometry">
+            <rect>
+             <x>230</x>
+             <y>140</y>
+             <width>951</width>
+             <height>131</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>宋体</family>
+             <pointsize>17</pointsize>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>    蚕种催青保种是养蚕的第一个重要阶段。为了给蚕种胚子发育创造理想的环境条件，对
+催青保种室中与蚕种发育有关的环境参数实施自动调节，借助于蚕种催青保种智能测控系统
+无疑是最迅捷而有效地办法。蚕种催青保种智能测控系统对蚕种催青保种的温度、湿度、感
+光、温湿差、换气等环境变量进行自动巡回检测，并按照蚕卵发育过程所需的最佳催青保种
+工艺曲线而自动实施有效地控制。</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_4">
+           <property name="geometry">
+            <rect>
+             <x>890</x>
+             <y>270</y>
+             <width>271</width>
+             <height>421</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>3</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="rec.qrc">:/img/1.jpg</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_3">
+           <property name="geometry">
+            <rect>
+             <x>230</x>
+             <y>270</y>
+             <width>711</width>
+             <height>381</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>宋体</family>
+             <pointsize>16</pointsize>
+             <weight>50</weight>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>    系统工作原理：在蚕种催青保种智能测控软件控制下，通过智
+
+能温湿度变送器检测催青保种室内的温度和湿度，并与标准催青保
+
+种工艺曲线值比较而获得一偏差值，再按特定的控制算法处理后获
+
+得输出调节量，送给智能控制配电柜，控制空调机（加热、制冷）、
+
+加热器（选配）、补湿器、匀风扇、感光灯、换气扇等动作，调节催
+
+青保种室内温度、湿度、温湿差、光照、空气，使之准确地跟踪最
+
+佳标准催青保种工艺曲线变化。</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_5">
+           <property name="geometry">
+            <rect>
+             <x>230</x>
+             <y>650</y>
+             <width>941</width>
+             <height>331</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>宋体</family>
+             <pointsize>16</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;系统显著特点：1、除控制温度、湿度常规参数以外，还增加了&lt;/p&gt;&lt;p&gt;自动换气、匀风、感光等蚕种催青保种的重要因素；2、增加了催青保种室内温湿度匀风系&lt;/p&gt;&lt;p&gt;统，尽量避免室内的温湿差；3、系统可同时控制多个催青保种室按照不同的蚕种催青保种&lt;/p&gt;&lt;p&gt;曲线、胚子发育不同时期催青保种；4、系统通过空调智能转换器充分利用空调的制热和制&lt;/p&gt;&lt;p&gt;冷功能，减少了催青保种的投入和设备的维护；5、系统具有软件和仪表控制双重保险功能&lt;/p&gt;&lt;p&gt;和声音提醒功能，减少系统的故障率。&lt;/p&gt;&lt;p&gt;催青保种工艺曲线在系统开机后由电脑软件面板设置，催青保种室内当前设定温、湿度&lt;/p&gt;&lt;p&gt;和实际温、湿度以及催青保种进程时间（日、时、分）均可通过面板以数字和曲线方式直观&lt;/p&gt;&lt;p&gt;显示出来，或通过打印机打印出来。 &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_6">
+           <property name="geometry">
+            <rect>
+             <x>250</x>
+             <y>1000</y>
+             <width>861</width>
+             <height>291</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="rec.qrc">:/img/4.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_8">
+           <property name="geometry">
+            <rect>
+             <x>240</x>
+             <y>1310</y>
+             <width>771</width>
+             <height>131</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>宋体</family>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;系统结构组成&lt;/span&gt;&lt;/p&gt;&lt;p&gt;根据蚕种催青保种的实际情况和用户的具体要求，蚕种催青保种智能测控系统由蚕种催&lt;/p&gt;&lt;p&gt;青保种智能测量监控系统、催青保种室设备系统、催青保种室动力配电系统三部分构成。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_10">
+           <property name="geometry">
+            <rect>
+             <x>930</x>
+             <y>1520</y>
+             <width>141</width>
+             <height>251</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="rec.qrc">:/img/3.jpg</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_9">
+           <property name="geometry">
+            <rect>
+             <x>240</x>
+             <y>1410</y>
+             <width>851</width>
+             <height>541</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>宋体</family>
+             <pointsize>16</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;蚕种催青保种智能测量监控系统是在蚕种催青保种专业技术的基础上，采用先进的电脑&lt;/p&gt;&lt;p&gt;手段和遥测遥控技术、数字传感技术、智能模块控制技术，根据预设的标准蚕种催青保种温&lt;/p&gt;&lt;p&gt;湿度曲线对蚕种催青保种过程进行全程电脑连续测量和实时控制，是具有全自动地进行信息&lt;/p&gt;&lt;p&gt;测量、信息采集、信息传递、信息处理、信息积累特征的自适应人机&lt;/p&gt;&lt;p&gt;智能系统，主要包括智能操作一体柜、综合控制台（含工控机、温湿&lt;/p&gt;&lt;p&gt;度监控软件、视频采集卡等）、温湿度变送器、监控（摄像机）等。&lt;/p&gt;&lt;p&gt;催青保种室设备系统是根据小环境气体动力学原理，完成催青保&lt;/p&gt;&lt;p&gt;种室的动力布线及信号布线。并且系统通过选用最适宜催青保种室使&lt;/p&gt;&lt;p&gt;用的先进可靠的制热、制冷、匀风、补湿、感光等设备，确保整个电&lt;/p&gt;&lt;p&gt;脑测量控制系统在适时监控下高效、稳定工作，从而到达蚕种催青保&lt;/p&gt;&lt;p&gt;种的最佳标准温湿度等曲线，主要包括控温（空调、加热器）、补湿&lt;/p&gt;&lt;p&gt;（补湿器）、匀风（调节扇）、换气（换气扇）、感光（日光灯）五部分组成。&lt;/p&gt;&lt;p&gt;催青保种室动力配电系统是根据计算机控制原理及实施方法：实施催青保种室内动力设&lt;/p&gt;&lt;p&gt;备动力线布线、催青保种室内传感器信号线、监控信号线布线、电脑操作台至催青保种室控&lt;/p&gt;&lt;p&gt;制柜的布线。&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_11">
+           <property name="geometry">
+            <rect>
+             <x>170</x>
+             <y>1940</y>
+             <width>1071</width>
+             <height>521</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="rec.qrc">:/img/table1.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_12">
+           <property name="geometry">
+            <rect>
+             <x>170</x>
+             <y>2460</y>
+             <width>1071</width>
+             <height>651</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="rec.qrc">:/img/table2.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_13">
+           <property name="geometry">
+            <rect>
+             <x>170</x>
+             <y>3110</y>
+             <width>1071</width>
+             <height>651</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="rec.qrc">:/img/table3.png</pixmap>
+           </property>
+           <property name="scaledContents">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_14">
+           <property name="geometry">
+            <rect>
+             <x>170</x>
+             <y>3780</y>
+             <width>1061</width>
+             <height>401</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>宋体</family>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>系统注意事项
+1、催青保种室应有专人负责，并制定相应的管理制度，规范管理；
+2、催青保种时，应有专人值班，应能熟练使用软件，随时监控室内的温湿度，设备运行情况，发现问题及时解决；
+3、催青保种室要配挂相应的温湿度计，随时检测室内温湿度计；
+4、值班人员发现电脑出现故障，应及时由自动转化为手动，保证催青保种室的运行；
+5、值班人员要定时和随时进入房间检测温湿值、匀风、换气、感光等设备运行情况；
+6、值班人员应掌握配电柜指示灯及其对应的设备；
+7、值班人员应能正确使用自动、手动转换；
+8、值班人员开启系统步骤：先开配电柜-显示器-电脑-点击运行软件；
+9、一旦报警，要及时检测原因，排除故障；
+10、在移动变送器的位置时，应小心信号线，不要损坏信号线和变送器；
+11、注意调整均匀变送器的位置；
+12、注意观察温湿度值，与省标催青保种数据对比，及时修正；
+13、随时检测胚子发育情况，如发现不符，应及时修正温湿度
+14、交换蚕箔的位置，尽量避免催青保种室温差；
+15、换气扇的工作是否正常，如不，及时开窗换气；
+16、停电后，来电后接通配电柜电源，打开电脑，恢复工作状态；
+</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_15">
+           <property name="geometry">
+            <rect>
+             <x>170</x>
+             <y>4170</y>
+             <width>1131</width>
+             <height>201</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>宋体</family>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>电脑及软件部分
+1、熟练的掌握蚕种催青保种智控软件，并能正确设定温度、湿度、匀风、换气、感光等；
+2、尽量避免使用移动设备（优盘、移动硬盘等），防止病毒感染，破环电脑及软件。
+3、熟练掌握软件中空调的加热和制冷转换；
+4、电脑声音请勿放到静音状态，否则温湿度异常时无法听见报警声音；
+5、若听到控制柜有“嘀…嘀…”的报警声，说明系统通讯出现问题，请检查催青保种软件是否正常运行，电脑是否运行正常；
+6、若听见电脑喇叭有“嘟…嘟…嘟…”报警声，说明温湿度不正常，请检查空调是否运行，加湿机是否正常运行（补湿机请勿缺水）；
+7、如果软件运行中出现异常，请及时联系我们。
+</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_16">
+           <property name="geometry">
+            <rect>
+             <x>170</x>
+             <y>4360</y>
+             <width>1181</width>
+             <height>321</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>宋体</family>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>设备部分
+配电柜
+1、配电柜如发现温度高，应及时开启配电柜顶部风扇，降温散热；
+2、配电柜有异味，发现电器出现短路、过载等情况时，应及时切断电源，维修处理；
+3、催青保种时，要随时观察配电柜指示灯与设备运行是否一致，如不一致，应及时查明原因，解决问题；
+4、催青保种前，检查配电柜中总开关-房间的开关-设备开关，是否正常；
+5、配电柜各个按钮请勿随意按动，转换按钮请拨到“自动控制”状态。
+空  调
+1、蚕种催青保种开始前，应检查空调的出风口是否开启，如无，应手动开启；
+2、蚕种催青保种开始前，注意观察空调出风口方向，不能对做蚕种催青架；
+3、蚕种催青保种消毒时，尽量避免空调接触漂白粉等腐蚀性药剂；
+4、空调的控制恢复：拉开空调下盖，揭开金属控制盒，找到左边红色插头，按照方向插入红色插座（显-CN22），
+空调显示窗即显示，找到中边白色插头，按照方向插入白色插座（上下摇摆-CN12），空调就可以恢复使用；</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_17">
+           <property name="geometry">
+            <rect>
+             <x>170</x>
+             <y>4680</y>
+             <width>1231</width>
+             <height>261</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>宋体</family>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>补湿器
+1、初次使用补湿器应认真检查完好后再开机使用；
+2、将外接出雾筒（Φ110mm）放在雾化输出孔上部的引筒上（外接出雾筒可按使用需要自配长度1000mm-1600mm）；
+3、接通电源，打开电源开关，电源指示灯亮(无水时严禁开机)，补湿器开始喷雾；
+4、刚开机使用的几分钟内，有少量的雾从周围溢出是正常现象；
+5、催青保种时，发现补湿器缺水时，应切断电源，及时加水；
+6、长时间未使用应先将水箱和水槽余水放尽、清洗干净。
+由于不同地方水质不同，有可能部分水中杂质沉淀在换能器及水槽表面，形成水垢，如果在换能器表面
+结上大量水垢，会影响加湿器的加湿效果。
+7、保持加湿洁净的方法为: 尽量使用纯净水加湿； 每周清洗换能器，水箱； 经常更换水箱中的陈水，
+保持加湿洁净； 补湿器长时间不用时，水箱及水槽中勿存水； 收藏时请将各部分清洗，擦干或晾干水分后装入原包装箱.
+8、清洗换能器的方法为： 向换能器表面滴注清洗剂约5-10滴(可视结垢程度酌情增减)，浸泡2-5分钟
+，用软毛刷轻轻刷洗换能器表面,直至除去水垢，用清水冲洗换能器表面；
+</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_18">
+           <property name="geometry">
+            <rect>
+             <x>560</x>
+             <y>4960</y>
+             <width>641</width>
+             <height>121</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>宋体</family>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>四川省农业科学院蚕业研究所 四川省南充市桃园生物化学研究开发有限公司
+联系方式：18080329735    19938535370
+0817-2230675   1993853 6220
+QQ：764632410      网址： scncty.1688.com
+</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_7">
+           <property name="geometry">
+            <rect>
+             <x>230</x>
+             <y>970</y>
+             <width>121</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>宋体</family>
+             <pointsize>14</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="text">
+            <string>系统结构框图</string>
+           </property>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="rec.qrc"/>
+ </resources>
+ <connections/>
+</ui>

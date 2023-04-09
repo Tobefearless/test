@@ -1,0 +1,844 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>home</class>
+ <widget class="QMainWindow" name="home">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1737</width>
+    <height>840</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Ignored">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="font">
+   <font>
+    <family>AcadEref</family>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_11">
+    <item row="0" column="0" colspan="3">
+     <widget class="QGroupBox" name="groupBox_45">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>91</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border:none</string>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QLabel" name="title">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>1881</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Adobe 楷体 Std R</family>
+         <pointsize>36</pointsize>
+         <weight>75</weight>
+         <italic>false</italic>
+         <bold>true</bold>
+         <underline>false</underline>
+         <strikeout>false</strikeout>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="../rec.qrc">:/img/head.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="left_title">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>20</y>
+         <width>491</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="../rec.qrc">:/img/leftTitle.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_12">
+       <property name="geometry">
+        <rect>
+         <x>580</x>
+         <y>20</y>
+         <width>731</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="../rec.qrc">:/img/title_blcak.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="right_title">
+       <property name="geometry">
+        <rect>
+         <x>1540</x>
+         <y>30</y>
+         <width>171</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>楷体</family>
+         <pointsize>20</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(1, 244, 250);</string>
+       </property>
+       <property name="text">
+        <string>2020-08-13</string>
+       </property>
+      </widget>
+      <zorder>title</zorder>
+      <zorder>right_title</zorder>
+      <zorder>label_12</zorder>
+      <zorder>left_title</zorder>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="styleSheet">
+       <string notr="true">#stackedWidget{border-color: rgb(59, 179, 195);
+            border-width: 3px;
+            border-style: solid;
+}
+</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Panel</enum>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="page">
+       <layout class="QGridLayout" name="gridLayout_10">
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_40">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>51</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_57">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QScrollArea" name="scrollArea">
+          <property name="styleSheet">
+           <string notr="true">QWidget{
+       background-color:transparent;
+}
+
+</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Sunken</enum>
+          </property>
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>1483</width>
+             <height>570</height>
+            </rect>
+           </property>
+           <widget class="QLabel" name="label_32">
+            <property name="geometry">
+             <rect>
+              <x>9</x>
+              <y>554</y>
+              <width>16</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_233">
+            <property name="geometry">
+             <rect>
+              <x>9</x>
+              <y>792</y>
+              <width>16</width>
+              <height>100</height>
+             </rect>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_3">
+            <property name="geometry">
+             <rect>
+              <x>9</x>
+              <y>1093</y>
+              <width>16</width>
+              <height>100</height>
+             </rect>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_31">
+            <property name="geometry">
+             <rect>
+              <x>9</x>
+              <y>1393</y>
+              <width>16</width>
+              <height>120</height>
+             </rect>
+            </property>
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>120</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <zorder>label_32</zorder>
+           <zorder>label_3</zorder>
+           <zorder>label_31</zorder>
+           <zorder>label_233</zorder>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_2"/>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QToolBox" name="toolBox">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>150</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>黑体</family>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::RightToLeft</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QWidget{ background: transparent;}
+
+QToolBoxButton { min-height:30px; }
+QToolBox::tab {background-color:rgba(22,77,255,255);border-color:rgba(0,0,3,255);color: rgba(51, 255, 255,255);border-style:none;border-width:0px;border-radius:0px;font:22px &quot;黑体&quot;; font-weight: bold;}
+
+QToolBox::tab:selected 
+{
+	color : #ffffff;
+}</string>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="page_3">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>150</width>
+         <height>383</height>
+        </rect>
+       </property>
+       <attribute name="label">
+        <string> 显示界面</string>
+       </attribute>
+       <widget class="QPushButton" name="pushButton_main">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>201</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>宋体</family>
+          <pointsize>-1</pointsize>
+          <weight>75</weight>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background-color:rgba(0,0,0,0);border-color:rgba(0,0,0,255);color: rgba(51, 255, 255,255);border-style:none;border-width:1px;border-radius:0px;font:bold 20px &quot;宋体&quot;;
+text-align: left;
+}
+
+QPushButton::hover{
+	color:rgb(255,255,255);
+	background-color: rgb(42, 46, 49); 
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>  显示界面</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_4">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>150</width>
+         <height>383</height>
+        </rect>
+       </property>
+       <attribute name="label">
+        <string> 系统设置</string>
+       </attribute>
+       <widget class="QPushButton" name="pushButton_settting">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>201</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background-color:rgba(0,0,0,0);border-color:rgba(0,0,0,255);color: rgba(51, 255, 255,255);border-style:none;border-width:1px;border-radius:0px;font:bold 20px &quot;宋体&quot;;
+text-align: left;
+}
+
+QPushButton::hover{
+	color:rgb(255,255,255);
+	background-color: rgb(42, 46, 49); 
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>系统设置</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../rec.qrc">
+          <normaloff>:/img/set.png</normaloff>:/img/set.png</iconset>
+        </property>
+        <property name="autoRepeat">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_5">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>150</width>
+         <height>383</height>
+        </rect>
+       </property>
+       <attribute name="label">
+        <string> 历史曲线</string>
+       </attribute>
+       <widget class="QPushButton" name="pushButton_chart">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>201</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background-color:rgba(0,0,0,0);border-color:rgba(0,0,0,255);color: rgba(51, 255, 255,255);border-style:none;border-width:1px;border-radius:0px;font:bold 20px &quot;宋体&quot;;
+text-align: left;
+}
+
+QPushButton::hover{
+	color:rgb(255,255,255);
+	background-color: rgb(42, 46, 49); 
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>历史曲线</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../rec.qrc">
+          <normaloff>:/img/chart.png</normaloff>:/img/chart.png</iconset>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_9">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>150</width>
+         <height>383</height>
+        </rect>
+       </property>
+       <attribute name="label">
+        <string> 数据报表</string>
+       </attribute>
+       <widget class="QPushButton" name="pushButton_dataP">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>201</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background-color:rgba(0,0,0,0);border-color:rgba(0,0,0,255);color: rgba(51, 255, 255,255);border-style:none;border-width:1px;border-radius:0px;font:bold 20px &quot;宋体&quot;;
+text-align: left;
+}
+
+QPushButton::hover{
+	color:rgb(255,255,255);
+	background-color: rgb(42, 46, 49); 
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>数据报表</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../rec.qrc">
+          <normaloff>:/img/Data report.png</normaloff>:/img/Data report.png</iconset>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_10">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>150</width>
+         <height>383</height>
+        </rect>
+       </property>
+       <attribute name="label">
+        <string> 传 感 器</string>
+       </attribute>
+       <widget class="QPushButton" name="pushButton_sensor">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>201</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background-color:rgba(0,0,0,0);border-color:rgba(0,0,0,255);color: rgba(51, 255, 255,255);border-style:none;border-width:1px;border-radius:0px;font:bold 20px &quot;宋体&quot;;
+text-align: left;
+}
+
+QPushButton::hover{
+	color:rgb(255,255,255);
+	background-color: rgb(42, 46, 49); 
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>传 感 器</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../rec.qrc">
+          <normaloff>:/img/sensor.png</normaloff>:/img/sensor.png</iconset>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_6">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>150</width>
+         <height>383</height>
+        </rect>
+       </property>
+       <attribute name="label">
+        <string> 设备通讯</string>
+       </attribute>
+       <widget class="QPushButton" name="pushButton_comminicat">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>201</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background-color:rgba(0,0,0,0);border-color:rgba(0,0,0,255);color: rgba(51, 255, 255,255);border-style:none;border-width:1px;border-radius:0px;font:bold 20px &quot;宋体&quot;;
+text-align: left;
+}
+
+QPushButton::hover{
+	color:rgb(255,255,255);
+	background-color: rgb(42, 46, 49); 
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>设备通讯</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../rec.qrc">
+          <normaloff>:/img/communication.png</normaloff>:/img/communication.png</iconset>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_11">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>150</width>
+         <height>383</height>
+        </rect>
+       </property>
+       <attribute name="label">
+        <string> 用户管理</string>
+       </attribute>
+       <widget class="QPushButton" name="pushButton_manage">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>201</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background-color:rgba(0,0,0,0);border-color:rgba(0,0,0,255);color: rgba(51, 255, 255,255);border-style:none;border-width:1px;border-radius:0px;font:bold 20px &quot;宋体&quot;;
+text-align: left;
+}
+
+QPushButton::hover{
+	color:rgb(255,255,255);
+	background-color: rgb(42, 46, 49); 
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>用户管理</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../rec.qrc">
+          <normaloff>:/img/User Management.png</normaloff>:/img/User Management.png</iconset>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_7">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>150</width>
+         <height>383</height>
+        </rect>
+       </property>
+       <attribute name="label">
+        <string> 帮助文档</string>
+       </attribute>
+       <widget class="QPushButton" name="pushButton_6">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>201</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background-color:rgba(0,0,0,0);border-color:rgba(0,0,0,255);color: rgba(51, 255, 255,255);border-style:none;border-width:1px;border-radius:0px;font:bold 20px &quot;宋体&quot;;
+text-align: left;
+}
+
+QPushButton::hover{
+	color:rgb(255,255,255);
+	background-color: rgb(42, 46, 49); 
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>帮助文档</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../rec.qrc">
+          <normaloff>:/img/help.png</normaloff>:/img/help.png</iconset>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_8">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>150</width>
+         <height>383</height>
+        </rect>
+       </property>
+       <attribute name="label">
+        <string> 退出系统</string>
+       </attribute>
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>201</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+background-color:rgba(0,0,0,0);border-color:rgba(0,0,0,255);color: rgba(51, 255, 255,255);border-style:none;border-width:1px;border-radius:0px;font:bold 20px &quot;宋体&quot;;
+text-align: left;
+}
+
+QPushButton::hover{
+	color:rgb(255,255,255);
+	background-color: rgb(42, 46, 49); 
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>退出系统</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../rec.qrc">
+          <normaloff>:/img/qiut.png</normaloff>:/img/qiut.png</iconset>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_30">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>180</y>
+          <width>211</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>111</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLabel" name="label_2">
+      <property name="minimumSize">
+       <size>
+        <width>50</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusBar">
+   <property name="font">
+    <font>
+     <family>楷体</family>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../rec.qrc"/>
+ </resources>
+ <connections/>
+</ui>
