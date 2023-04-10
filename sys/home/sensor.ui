@@ -1,0 +1,1271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Sensor</class>
+ <widget class="QMainWindow" name="Sensor">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1203</width>
+    <height>879</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>8</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/*#Sensor{
+background-color: rgb(14, 159, 255);
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>90</y>
+      <width>821</width>
+      <height>351</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+
+QTableView
+{
+	background-color: rgba(255, 255, 255, 0); 
+	alternate-background-color:#e3edf9;
+	font:14px &quot;微软雅黑&quot;;
+	font-weight:bold;
+	color:#677483;
+	gridline-color: #ccddf0;
+	background-color:transparent
+}
+ 
+QTableView::item
+{	
+	font:14px &quot;微软雅黑&quot;;
+
+	color:#677483;
+	gridline-color: #ccddf0; 
+	
+	color: rgb(255, 255, 255);
+}
+ 
+QTableView::item:selected
+{	
+	color:#677483;
+}
+ 
+QHeaderView::section {	
+	color: black;
+	font:bold 14px &quot;微软雅黑&quot;;
+	text-align:center;
+	height:32px;
+	background-color: #d1dff0;
+	border:1px solid #8faac9;
+	border-left:none;
+}
+ 
+// border-left:none;防止中间表头的border重叠
+QHeaderView::section:first 
+{
+	border-left:1px solid #8faac9;
+}
+</string>
+    </property>
+    <property name="alternatingRowColors">
+     <bool>false</bool>
+    </property>
+    <property name="selectionMode">
+     <enum>QAbstractItemView::SingleSelection</enum>
+    </property>
+    <property name="selectionBehavior">
+     <enum>QAbstractItemView::SelectRows</enum>
+    </property>
+    <property name="sortingEnabled">
+     <bool>false</bool>
+    </property>
+    <row>
+     <property name="text">
+      <string/>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string/>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string/>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string/>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string/>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string/>
+     </property>
+    </row>
+    <column>
+     <property name="text">
+      <string>编号</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>设备名称</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>实时温度</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>实时湿度</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>温度修正</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>湿度修正</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>状态</string>
+     </property>
+    </column>
+    <item row="0" column="0">
+     <property name="text">
+      <string>1</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../rec.qrc">
+       <normaloff>:/img/sensor_table.png</normaloff>:/img/sensor_table.png</iconset>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item row="0" column="1">
+     <property name="text">
+      <string>SCSQ210124001-1</string>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item row="0" column="2">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item row="0" column="3">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item row="0" column="4">
+     <property name="text">
+      <string>0.0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+    </item>
+    <item row="0" column="5">
+     <property name="text">
+      <string>0.0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+    </item>
+    <item row="0" column="6">
+     <property name="text">
+      <string>异常</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="NoBrush">
+       <color alpha="255">
+        <red>255</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item row="1" column="0">
+     <property name="text">
+      <string>2</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../rec.qrc">
+       <normaloff>:/img/sensor_table.png</normaloff>:/img/sensor_table.png</iconset>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item row="1" column="1">
+     <property name="text">
+      <string>SCSQ210124001-2</string>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item row="1" column="2">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item row="1" column="3">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item row="1" column="4">
+     <property name="text">
+      <string>0.0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+    </item>
+    <item row="1" column="5">
+     <property name="text">
+      <string>0.0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+    </item>
+    <item row="1" column="6">
+     <property name="text">
+      <string>异常</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="NoBrush">
+       <color alpha="255">
+        <red>255</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item row="2" column="0">
+     <property name="text">
+      <string>3</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../rec.qrc">
+       <normaloff>:/img/sensor_table.png</normaloff>:/img/sensor_table.png</iconset>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item row="2" column="1">
+     <property name="text">
+      <string>SCSQ210124001-3</string>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item row="2" column="2">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item row="2" column="3">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item row="2" column="4">
+     <property name="text">
+      <string>0.0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+    </item>
+    <item row="2" column="5">
+     <property name="text">
+      <string>0.0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+    </item>
+    <item row="2" column="6">
+     <property name="text">
+      <string>异常</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="NoBrush">
+       <color alpha="255">
+        <red>255</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item row="3" column="0">
+     <property name="text">
+      <string>4</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../rec.qrc">
+       <normaloff>:/img/sensor_table.png</normaloff>:/img/sensor_table.png</iconset>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item row="3" column="1">
+     <property name="text">
+      <string>SCSQ210124001-4</string>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item row="3" column="2">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item row="3" column="3">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item row="3" column="4">
+     <property name="text">
+      <string>0.0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+    </item>
+    <item row="3" column="5">
+     <property name="text">
+      <string>0.0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+    </item>
+    <item row="3" column="6">
+     <property name="text">
+      <string>异常</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="NoBrush">
+       <color alpha="255">
+        <red>255</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item row="4" column="0">
+     <property name="text">
+      <string>5</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../rec.qrc">
+       <normaloff>:/img/sensor_table.png</normaloff>:/img/sensor_table.png</iconset>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item row="4" column="1">
+     <property name="text">
+      <string>SCSQ210124002-1</string>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item row="4" column="2">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item row="4" column="3">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item row="4" column="4">
+     <property name="text">
+      <string>0.0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+    </item>
+    <item row="4" column="5">
+     <property name="text">
+      <string>0.0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+    </item>
+    <item row="4" column="6">
+     <property name="text">
+      <string>异常</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="NoBrush">
+       <color alpha="255">
+        <red>255</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item row="5" column="0">
+     <property name="text">
+      <string>6</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../rec.qrc">
+       <normaloff>:/img/sensor_table.png</normaloff>:/img/sensor_table.png</iconset>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item row="5" column="1">
+     <property name="text">
+      <string>SCSQ210124002-2</string>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item row="5" column="2">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item row="5" column="3">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item row="5" column="4">
+     <property name="text">
+      <string>0.0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+    </item>
+    <item row="5" column="5">
+     <property name="text">
+      <string>0.0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+    </item>
+    <item row="5" column="6">
+     <property name="text">
+      <string>异常</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignCenter</set>
+     </property>
+     <property name="background">
+      <brush brushstyle="NoBrush">
+       <color alpha="255">
+        <red>255</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>10</y>
+      <width>331</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QGroupBox {
+            border-color: rgb(255, 255, 255);
+			background-color: rgb(255, 255, 127);
+            border-width: 2px;
+            border-style: solid;
+            margin-top: 0.5ex;
+        }</string>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>321</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>楷体</family>
+       <pointsize>17</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>提示：双击鼠标，修改参数！</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="btn_save">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>30</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>楷体</family>
+      <pointsize>17</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+color: rgb(255, 255, 255);
+ border:5px outset rgb(39,118,129);
+ background-color: qconicalgradient(cx:0.5, cy:0.5, angle:180, stop:0.49999 rgba(46, 138, 149, 255), stop:0.50001 rgba(55, 158, 169, 255));
+border-radius:10px;
+padding:2px 4px;
+}
+
+QPushButton:hover{
+	
+	color: rgb(0, 0, 0);
+    border:5px outset gray;
+    background-color: qconicalgradient(cx:0.5, cy:0.5, angle:180, stop:0.49999 rgba(188, 188, 188, 255), stop:0.50001 rgba(208, 208, 208, 255));
+    border-radius:10px;
+	position:relative; top:1px; left:1px
+}
+
+QPushButton:pressed{
+    border:5px outset gray;
+    background-color: qconicalgradient(cx:0.5, cy:0.5, angle:180, stop:0.49999 rgba(208, 208, 208, 255), stop:0.50001 rgba(188, 188, 188, 255));
+	border-bottom: 1px;
+    border-radius:5px;
+}</string>
+    </property>
+    <property name="text">
+     <string>保存</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>510</y>
+      <width>821</width>
+      <height>361</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+
+QTableView
+{
+	background-color: rgba(255, 255, 255, 0); 
+	alternate-background-color:#e3edf9;
+	font:14px &quot;微软雅黑&quot;;
+	font-weight:bold;
+	color:#677483;
+	gridline-color: #ccddf0;
+	background-color:transparent
+}
+ 
+QTableView::item
+{	
+	font:14px &quot;微软雅黑&quot;;
+
+	color:#677483;
+	gridline-color: #ccddf0; 
+	
+	color: rgb(255, 255, 255);
+}
+ 
+QTableView::item:selected
+{	
+	color:#677483;
+}
+ 
+QHeaderView::section {	
+	color: black;
+	font:bold 14px &quot;微软雅黑&quot;;
+	text-align:center;
+	height:32px;
+	background-color: #d1dff0;
+	border:1px solid #8faac9;
+	border-left:none;
+}
+ 
+// border-left:none;防止中间表头的border重叠
+QHeaderView::section:first 
+{
+	border-left:1px solid #8faac9;
+}
+</string>
+    </property>
+    <property name="alternatingRowColors">
+     <bool>false</bool>
+    </property>
+    <property name="selectionMode">
+     <enum>QAbstractItemView::SingleSelection</enum>
+    </property>
+    <property name="selectionBehavior">
+     <enum>QAbstractItemView::SelectRows</enum>
+    </property>
+    <property name="sortingEnabled">
+     <bool>false</bool>
+    </property>
+    <attribute name="verticalHeaderDefaultSectionSize">
+     <number>40</number>
+    </attribute>
+    <row>
+     <property name="text">
+      <string/>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string/>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string/>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string/>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string/>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string/>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string/>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string/>
+     </property>
+    </row>
+    <column>
+     <property name="text">
+      <string>设备名称</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>传感器名称</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>实时浓度（ppm）</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>修正浓度（ppm）</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>显示浓度（ppm）</string>
+     </property>
+    </column>
+    <item row="0" column="0">
+     <property name="text">
+      <string>SXZC220808001</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../../../Show_off_6_month/sys/rec.qrc">
+       <normaloff>:/img/CO.png</normaloff>:/img/CO.png</iconset>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item row="0" column="1">
+     <property name="text">
+      <string>一氧化碳</string>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item row="0" column="2">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignLeading|AlignVCenter</set>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item row="0" column="3">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignLeading|AlignVCenter</set>
+     </property>
+    </item>
+    <item row="0" column="4">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignLeading|AlignVCenter</set>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item row="1" column="0">
+     <property name="text">
+      <string>SXZC220808001</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../../../Show_off_6_month/sys/rec.qrc">
+       <normaloff>:/img/CO2.png</normaloff>:/img/CO2.png</iconset>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item row="1" column="1">
+     <property name="text">
+      <string>二氧化碳</string>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item row="1" column="2">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignLeading|AlignVCenter</set>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item row="1" column="3">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignLeading|AlignVCenter</set>
+     </property>
+    </item>
+    <item row="1" column="4">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignLeading|AlignVCenter</set>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item row="2" column="0">
+     <property name="text">
+      <string>SXZC220808001</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../../../Show_off_6_month/sys/rec.qrc">
+       <normaloff>:/img/NH3.png</normaloff>:/img/NH3.png</iconset>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item row="2" column="1">
+     <property name="text">
+      <string>二氧化禄</string>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item row="2" column="2">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignLeading|AlignVCenter</set>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item row="2" column="3">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignLeading|AlignVCenter</set>
+     </property>
+    </item>
+    <item row="2" column="4">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignLeading|AlignVCenter</set>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item row="3" column="0">
+     <property name="text">
+      <string>SXZC220808001</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../../../Show_off_6_month/sys/rec.qrc">
+       <normaloff>:/img/NH3.png</normaloff>:/img/NH3.png</iconset>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item row="3" column="1">
+     <property name="text">
+      <string>氨气</string>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item row="3" column="2">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignLeading|AlignVCenter</set>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item row="3" column="3">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignLeading|AlignVCenter</set>
+     </property>
+    </item>
+    <item row="3" column="4">
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="textAlignment">
+      <set>AlignLeading|AlignVCenter</set>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item row="4" column="0">
+     <property name="text">
+      <string>SXZC220808002</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../../../Show_off_6_month/sys/rec.qrc">
+       <normaloff>:/img/CO.png</normaloff>:/img/CO.png</iconset>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item row="4" column="1">
+     <property name="text">
+      <string>一氧化碳</string>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item row="4" column="2">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="4" column="3">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="4" column="4">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="5" column="0">
+     <property name="text">
+      <string>SXZC220808002</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../../../Show_off_6_month/sys/rec.qrc">
+       <normaloff>:/img/CO2.png</normaloff>:/img/CO2.png</iconset>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item row="5" column="1">
+     <property name="text">
+      <string>二氧化碳</string>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item row="5" column="2">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="5" column="3">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="5" column="4">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="6" column="0">
+     <property name="text">
+      <string>SXZC220808002</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../../../Show_off_6_month/sys/rec.qrc">
+       <normaloff>:/img/SO2.png</normaloff>:/img/SO2.png</iconset>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item row="6" column="1">
+     <property name="text">
+      <string>二氧化禄</string>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item row="6" column="2">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="6" column="3">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="6" column="4">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="7" column="0">
+     <property name="text">
+      <string>SXZC220808002</string>
+     </property>
+     <property name="icon">
+      <iconset resource="../../../Show_off_6_month/sys/rec.qrc">
+       <normaloff>:/img/NH3.png</normaloff>:/img/NH3.png</iconset>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item row="7" column="1">
+     <property name="text">
+      <string>氨气</string>
+     </property>
+     <property name="flags">
+      <set>ItemIsSelectable|ItemIsUserCheckable|ItemIsEnabled</set>
+     </property>
+    </item>
+    <item row="7" column="2">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="7" column="3">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+    <item row="7" column="4">
+     <property name="text">
+      <string>0</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>470</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>黑体</family>
+      <pointsize>19</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>其他传感器</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_other_save">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>460</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>楷体</family>
+      <pointsize>17</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+color: rgb(255, 255, 255);
+ border:5px outset rgb(39,118,129);
+ background-color: qconicalgradient(cx:0.5, cy:0.5, angle:180, stop:0.49999 rgba(46, 138, 149, 255), stop:0.50001 rgba(55, 158, 169, 255));
+border-radius:10px;
+padding:2px 4px;
+}
+
+QPushButton:hover{
+	
+	color: rgb(0, 0, 0);
+    border:5px outset gray;
+    background-color: qconicalgradient(cx:0.5, cy:0.5, angle:180, stop:0.49999 rgba(188, 188, 188, 255), stop:0.50001 rgba(208, 208, 208, 255));
+    border-radius:10px;
+	position:relative; top:1px; left:1px
+}
+
+QPushButton:pressed{
+    border:3px inset gray;
+    background-color: qconicalgradient(cx:0.5, cy:0.5, angle:180, stop:0.49999 rgba(208, 208, 208, 255), stop:0.50001 rgba(188, 188, 188, 255));
+	border-bottom: 1px;
+    border-radius:10px;
+}</string>
+    </property>
+    <property name="text">
+     <string>保存</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../rec.qrc"/>
+  <include location="../../../Show_off_6_month/sys/rec.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,28 @@
+<RCC>
+    <qresource prefix="/">
+        <file>登录背景.jpg</file>
+        <file>登录主图.jpg</file>
+        <file>16pic_7f100b7b3609.png</file>
+        <file>16pic_1068c6e4c805.png</file>
+        <file>16pic_588920_s.jpg</file>
+        <file>16pic_591701_s.jpg</file>
+        <file>16pic_591937_s.jpg</file>
+        <file>16pic_1811649_s.jpg</file>
+        <file>16pic_2432032_s.jpg</file>
+        <file>16pic_2796138_s.jpg</file>
+        <file>16pic_3895182_s.jpg</file>
+        <file>16pic_4876841_s.jpg</file>
+        <file>16pic_6794587_42f72110.png</file>
+        <file>16pic_7047146_s.png</file>
+        <file>16pic_7151253_1b18936a.svg</file>
+        <file>16pic_7182741_s.jpg</file>
+        <file>black.jpg</file>
+        <file>connect.png</file>
+        <file>disconnect.png</file>
+        <file>pic.qrc</file>
+        <file>set.png</file>
+        <file>show.jpg</file>
+        <file>QQ截图20200924233635.png</file>
+        <file>config.dat</file>
+    </qresource>
+</RCC>
