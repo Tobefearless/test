@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>COMMS_indicate</class>
+ <widget class="QMainWindow" name="COMMS_indicate">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1449</width>
+    <height>792</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/*#COMMS_indicate{
+	
+	background-image: url(:/img/16pic_591937_s.jpg);
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QListWidget" name="listWidget">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>130</y>
+      <width>921</width>
+      <height>571</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+	background-color:transparent</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>1240</x>
+      <y>160</y>
+      <width>101</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>楷体</family>
+      <pointsize>18</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+color: rgb(255, 255, 255);
+ border:5px outset rgb(39,118,129);
+ background-color: qconicalgradient(cx:0.5, cy:0.5, angle:180, stop:0.49999 rgba(46, 138, 149, 255), stop:0.50001 rgba(55, 158, 169, 255));
+border-radius:10px;
+padding:2px 4px;
+}
+
+QPushButton:hover{
+	
+	color: rgb(0, 0, 0);
+    border:5px outset gray;
+    background-color: qconicalgradient(cx:0.5, cy:0.5, angle:180, stop:0.49999 rgba(188, 188, 188, 255), stop:0.50001 rgba(208, 208, 208, 255));
+    border-radius:10px;
+	position:relative; top:1px; left:1px
+}
+
+QPushButton:pressed{
+    border:3px inset gray;
+    background-color: qconicalgradient(cx:0.5, cy:0.5, angle:180, stop:0.49999 rgba(208, 208, 208, 255), stop:0.50001 rgba(188, 188, 188, 255));
+	border-bottom: 1px;
+    border-radius:10px;
+}</string>
+    </property>
+    <property name="text">
+     <string>暂停</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
